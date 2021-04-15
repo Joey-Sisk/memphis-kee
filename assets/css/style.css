@@ -1,0 +1,46 @@
+:root {
+  --colorBackgroundMain: #333;
+  --colorTextMain: #e2e2e2;
+  --colorTextAccent: rgb(48, 255, 182);
+}
+
+body {
+  background-color: var(--colorBackgroundMain);
+}
+
+p {
+  color: var(--colorTextMain);
+}
+
+li {
+  color: var(--colorTextMain);
+}
+
+h1 {
+  color: var(--colorTextMain);
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/solo-sephia.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: no-repeat;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.nav-bar {
+  width: 100%;
+  float: left;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
