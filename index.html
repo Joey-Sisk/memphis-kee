@@ -9,61 +9,51 @@
   </head>
   <body>
     <!-- Nav Bar -->
-    <nav>
-      <div class="nav-bar">
-        <a href="#">Memphis Kee</a>
-        <button type="button">Hamburger</button>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Tour</a>
-          </li>
-          <li>
-            <a href="#">Story</a>
-          </li>
-          <li>
-            <a href="#">Merch</a>
-          </li>
-        </ul>
-      </div>
+    <nav class="nav-bar">
+      <a class="nav-item nav-link" href="#">Memphis Kee</a>
+      <a class="nav-item nav-link" href="#">Home</a>
+      <a class="nav-item nav-link" href="#">Tour</a>
+      <a class="nav-item nav-link" href="#">Story</a>
+      <a class="nav-item nav-link" href="#">Merch</a>
     </nav>
 
     <!-- Hero Image/Maybe Video -->
-    <div class="hero-image">
-      <div class="hero-text">
+    <div class="hero-container">
+      <div class="hero-content">
         <h1>Memphis Kee</h1>
         <p>Shred Dirt Country</p>
-        <button>Contact Me</button>
       </div>
     </div>
 
     <!-- Social Links -->
 
+
     <!-- Contact Form -->
-    <form action="https://formspree.io/f/mknpdokj" method="POST">
-      <fieldset>
-        <label for="inputEmail1">Your Email</label>
-        <input
-          type="email"
-          name="_replyto"
-          id="inputEmail1"
-          aria-describedby="emailHelp"
-          placeholder="Enter email"
-        />
-        <label for="textarea">Message</label>
-        <textarea name="message" rows="3"></textarea>
-        <button type="submit">Submit</button>
-      </fieldset>
-    </form>
+    <div class="form-container">
+      <form action="https://formspree.io/f/mknpdokj" method="POST">
+        <fieldset>
+          <label for="inputEmail1">Your Email</label>
+          <input
+            class="form-inputs"
+            type="email"
+            name="_replyto"
+            id="inputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+          <label for="textarea">Message</label>
+          <textarea class="form-inputs" name="message" rows="3"></textarea>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
 
     <!-- Footer -->
-    <footer>
+    <!-- <footer>
       <div>
         <p>Designed by -Joey Sisk-</p>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
 
