@@ -3,7 +3,7 @@
 try {
   $pdo = new PDO("mysql:host=localhost;dbname=content_manager",
     "root",
-    "T0mW@it$"
+    "root"
   );
   // echo "Connected!";
 } catch (PDOException $e) {

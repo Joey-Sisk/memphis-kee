@@ -42,7 +42,7 @@ if (isset($_SESSION["logged_in"])) {
         <select onChange="this.form.submit();" name="id">
           <?php foreach ($events as $event) {
             echo "<option value=$event[id]>",
-            "$event[venue] $event[event_date]",
+            "$event[venue] $event[event_time]",
             "</option>";
           } ?>
         </select>

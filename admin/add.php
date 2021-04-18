@@ -7,22 +7,19 @@ include_once("../includes/connection.php");
 if (isset($_SESSION["logged_in"])) {
   if (isset(
     $_POST["venue"],
-    $_POST["event_date"],
     $_POST["event_time"],
     $_POST["about"]
   )) {
     $venue = $_POST["venue"];
-    $event_date = $_POST["event_date"];
     $event_time = $_POST["event_time"];
     $about = nl2br($_POST["about"]);
 
-    if (empty($venue) or empty($event_date) or empty($event_time) or empty($about)) {
+    if (empty($venue) or empty($event_time) or empty($about)) {
       $error = "All fields are required.";
     } else {
-      $query = $pdo->prepare("INSERT INTO events (venue, event_date, event_time, about) VALUES (?, ?, ?, ?)");
+      $query = $pdo->prepare("INSERT INTO events (venue, event_time, about) VALUES (?, ?, ?, ?)");
 
       $query->bindValue(1, $venue);
-      $query->bindValue(2, $event_date);
       $query->bindValue(3, $event_time);
       $query->bindValue(4, $about);
 
@@ -63,9 +60,8 @@ if (isset($_SESSION["logged_in"])) {
 
       <form action="add.php" method="post" autocomplete="off">
         <input type="text" name="venue" placeholder="Venue"><br />
-        <input type="text" name="event_date" placeholder="Date mm/dd/yyyy"><br />
-        <label for="date">What time is the event?</label><br />
-        <input type="time" name="event_time"><br />
+        <label for="event_time">When is the event?</label><br />
+        <input type="datetime-local" name="event_time"><br />
         <textarea name="about" cols="30" rows="6" placeholder="About the event"></textarea><br />
         <input type="submit" value="Add Event">
       </form>
