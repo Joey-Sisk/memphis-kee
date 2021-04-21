@@ -43,13 +43,16 @@ $events = $event->fetch_all();
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tour</a>
+            <a class="nav-link" href="#story-nav">Story</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Story</a>
+            <a class="nav-link" href="#tour-nav">Tour</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Merch</a>
+            <a class="nav-link" href="#merch-nav">Merch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-nav">Contact</a>
           </li>
         </ul>
       </div>
@@ -104,8 +107,16 @@ $events = $event->fetch_all();
       </div>
     </div>
 
+    <!-- About/Story -->
+    <h3 id="#story-nav">
+      Memphis Kee's Story
+    </h3>
+    <p>
+      Look, no one wants to read a long, pretentious band bio talking about who influenced me to play my first G chord in 1994 (Radiohead) or how I was in the George Jones Fan Club at age 12, so let's keep it to the point. I am a singer/songwriter/band leader that goes by the name Memphis Kee.
+    </p>
+
     <!-- Show Dates -->
-    <div>
+    <div id="#tour-nav">
       <h3>Show Dates</h3>
       <table class="table">
         <thead>
@@ -129,8 +140,16 @@ $events = $event->fetch_all();
 
     <!-- <p><a href="admin">admin</a></p> -->
 
+    <!-- Merch Link -->
+    <h3 id="#merch-nav">
+      Links to Merchendice
+    </h3>
+    <p>
+      https://memphiskee.bigcartel.com/products
+    </p>
+
     <!-- Contact Form -->
-    <form class="mt-3 mb-3" action="https://formspree.io/f/mknpdokj" method="POST">
+    <form class="mt-3 mb-3" id="#contact-nav" action="https://formspree.io/f/mknpdokj" method="POST">
       <fieldset>
         <div class="form-group">
           <label for="exampleInputEmail1">Your Email</label>

@@ -17,11 +17,11 @@ if (isset($_SESSION["logged_in"])) {
     if (empty($venue) or empty($event_time) or empty($about)) {
       $error = "All fields are required.";
     } else {
-      $query = $pdo->prepare("INSERT INTO events (venue, event_time, about) VALUES (?, ?, ?, ?)");
+      $query = $pdo->prepare("INSERT INTO events (venue, event_time, about) VALUES (?, ?, ?)");
 
       $query->bindValue(1, $venue);
-      $query->bindValue(3, $event_time);
-      $query->bindValue(4, $about);
+      $query->bindValue(2, $event_time);
+      $query->bindValue(3, $about);
 
       $query->execute();
 
