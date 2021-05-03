@@ -14,7 +14,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
 <?php
 
-// include_once("includes/connection.php");
+include_once("includes/connection.php");
 include_once("includes/event.php");
 
 $event = new Event;
