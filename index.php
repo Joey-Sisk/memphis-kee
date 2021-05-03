@@ -160,7 +160,7 @@ $events = $event->fetch_all();
       Links to Merchendice
     </h3>
     <p>
-      https://memphiskee.bigcartel.com/products
+      <span href="https://memphiskee.bigcartel.com/products" target="_blank"F>Click here</span> to purchase merch.
     </p>
 
     <!-- Contact Form -->
