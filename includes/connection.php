@@ -7,6 +7,6 @@ try {
   );
   // echo "Connected!";
 } catch (PDOException $e) {
-  $error = "ERROR - Connection to DB failed: " . $e->getMessage();
+  $error = "ERROR! - Connection to DB failed: " . $e->getMessage();
   exit($error);
 }
