@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <?php
+// //Get Heroku ClearDB connection information
+// $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+// $cleardb_server = $cleardb_url["host"];
+// $cleardb_username = $cleardb_url["user"];
+// $cleardb_password = $cleardb_url["pass"];
+// $cleardb_db = substr($cleardb_url["path"], 1);
+// $active_group = 'default';
+// $query_builder = TRUE;
+// // Connect to DB
+// $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+
+// https://www.youtube.com/watch?v=EyEn5gREn_U
+?>
+
+<?php
 
 include_once("includes/connection.php");
 include_once("includes/event.php");
@@ -9,18 +24,6 @@ $events = $event->fetch_all();
 
 // print_r($events);
 
-?>
-<?php
-//Get Heroku ClearDB connection information
-$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$cleardb_server = $cleardb_url["host"];
-$cleardb_username = $cleardb_url["user"];
-$cleardb_password = $cleardb_url["pass"];
-$cleardb_db = substr($cleardb_url["path"], 1);
-$active_group = 'default';
-$query_builder = TRUE;
-// Connect to DB
-$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 ?>
 
 <html lang="en-us">
@@ -157,7 +160,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
       Links to Merchendice
     </h3>
     <p>
-      https://memphiskee.bigcartel.com/products
+      <span href="https://memphiskee.bigcartel.com/products" target="_blank"F>Click here</span> to purchase merch.
     </p>
 
     <!-- Contact Form -->
