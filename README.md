@@ -17,7 +17,7 @@ A website to advertise the music and personality of Memphis Kee and his band. Th
 
 ## Link
 
-[This link will take you to the deployed site on Heroku!](https://joey-sisk.github.io/memphis-kee/)
+[This link will take you to the deployed site on Heroku!](http://memphis-kee.herokuapp.com//)
 
 ## Screenshot
 
