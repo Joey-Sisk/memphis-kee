@@ -31,6 +31,10 @@ A website to advertise the music and personality of Memphis Kee and his band. Th
 
 - https://opensource.org/licenses/MIT -->
 
+## Resources
+
+https://www.doabledanny.com/Deploy-PHP-And-MySQL-to-Heroku
+
 ## Questions
 
 If you have any questions about the app, open an issue or contact me through the contact form on my portfolio website: https://joey-sisk.github.io/Portfolio/. You can find more of my work at [Joey Sisk](github.com/joey-sisk).
