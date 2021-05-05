@@ -11,9 +11,11 @@ A website to advertise the music and personality of Memphis Kee and his band. Th
 
 * [Screenshot](#Screenshot)
 
-* [License](#license)
+* [License](#License)
 
-* [Questions](#questions)
+* [Resources](#Resources)
+
+* [Questions](#Questions)
 
 ## Link
 
