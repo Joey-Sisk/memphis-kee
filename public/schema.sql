@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS memphiskee;
+CREATE DATABASE memphiskee;
