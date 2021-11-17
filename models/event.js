@@ -19,6 +19,10 @@ Event.init(
         len: [1]
       }
     },
+    time: {
+      type: DataTypes.DATE,
+      allowNull: false
+    },
     category: {
       type: DataTypes.STRING,
       defaultValue: 'Personal'

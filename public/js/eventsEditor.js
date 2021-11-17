@@ -6,10 +6,9 @@ $(document).ready(function () {
   $(document).on("click", "button.edit", handleEventEdit);
 
   var events;
+  var authorId;
 
   var url = window.location.search;
-
-  var authorId;
 
   if (url.indexOf("?author_id=") !== -1) {
     authorId = url.split("=")[1];
@@ -53,20 +52,27 @@ $(document).ready(function () {
   }
 
   function createNewRow(event) {
-    var formattedDate = new Date(event.createdAt);
-    formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm:ss a");
+    var formattedDate = event.time;
+    formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm a");
+
     var newEventCard = $("<div>");
     newEventCard.addClass("card");
+
     var newEventCardHeading = $("<div>");
     newEventCardHeading.addClass("card-header");
+
     var deleteBtn = $("<button>");
     deleteBtn.text("x");
     deleteBtn.addClass("delete btn btn-danger");
+
     var editBtn = $("<button>");
     editBtn.text("EDIT");
     editBtn.addClass("edit btn btn-info");
+
     var newEventTitle = $("<h2>");
+
     var newEventDate = $("<small>");
+
     var newEventAuthor = $("<h5>");
     newEventAuthor.text("Written by: " + event.Author.name);
     newEventAuthor.css({
@@ -74,21 +80,27 @@ $(document).ready(function () {
       color: "blue",
       "margin-top": "-10px",
     });
+
     var newEventCardBody = $("<div>");
     newEventCardBody.addClass("card-body");
+
     var newEventBody = $("<p>");
     newEventTitle.text(event.title + " ");
     newEventBody.text(event.body);
     newEventDate.text(formattedDate);
     newEventTitle.append(newEventDate);
+  
     newEventCardHeading.append(deleteBtn);
     newEventCardHeading.append(editBtn);
     newEventCardHeading.append(newEventTitle);
     newEventCardHeading.append(newEventAuthor);
+
     newEventCardBody.append(newEventBody);
+
     newEventCard.append(newEventCardHeading);
     newEventCard.append(newEventCardBody);
     newEventCard.data("event", event);
+    
     return newEventCard;
   }
 
