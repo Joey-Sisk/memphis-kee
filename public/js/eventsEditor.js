@@ -54,7 +54,7 @@ $(document).ready(function () {
 
   function createNewRow(event) {
     var formattedDate = new Date(event.createdAt);
-    formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm:ss a");
+    formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm a");
     var newEventCard = $("<div>");
     newEventCard.addClass("card");
     var newEventCardHeading = $("<div>");
