@@ -1,24 +1,23 @@
 $(document).ready(function () {
-  var bodyInput = $('#body');
-  var titleInput = $('#title');
-  var cmsForm = $('#cms');
-  var authorSelect = $('#author');
+  let bodyInput = $("#body");
+  let timeInput = $("#time");
+  let titleInput = $("#title");
+  let cmsForm = $("#cms");
+  let authorSelect = $("#author");
 
-  $(cmsForm).on('submit', handleFormSubmit);
+  $(cmsForm).on("submit", handleFormSubmit);
 
-  var url = window.location.search;
-  var eventId;
-  var authorId;
+  let url = window.location.search;
+  let eventId;
+  let authorId;
 
-  var updating = false;
+  let updating = false;
 
-  if (url.indexOf('?event_id=') !== -1) {
-    eventId = url.split('=')[1];
-    getEventData(eventId, 'event');
-  }
-
-  else if (url.indexOf('?author_id=') !== -1) {
-    authorId = url.split('=')[1];
+  if (url.indexOf("?event_id=") !== -1) {
+    eventId = url.split("=")[1];
+    getEventData(eventId, "event");
+  } else if (url.indexOf("?author_id=") !== -1) {
+    authorId = url.split("=")[1];
   }
 
   getAuthors();
@@ -26,12 +25,18 @@ $(document).ready(function () {
   function handleFormSubmit(event) {
     event.preventDefault();
 
-    if (!titleInput.val().trim() || !bodyInput.val().trim() || !authorSelect.val()) {
+    if (
+      !titleInput.val().trim() ||
+      !timeInput.val().trim() ||
+      !bodyInput.val().trim() ||
+      !authorSelect.val()
+    ) {
       return;
     }
 
     var newEvent = {
       title: titleInput.val().trim(),
+      time: timeInput.val().trim(),
       body: bodyInput.val().trim(),
       AuthorId: authorSelect.val(),
     };
@@ -40,26 +45,26 @@ $(document).ready(function () {
 
     if (updating) {
       newEvent.id = eventId;
-     updateEvent(newEvent);
+      updateEvent(newEvent);
     } else {
       submitEvent(newEvent);
     }
   }
 
   function submitEvent(event) {
-    $.post('/api/events', event, function () {
-      window.location.href = '/home'; 
+    $.post("/api/events", event, function () {
+      window.location.href = "/home";
     });
   }
 
   function getEventData(id, type) {
     var queryUrl;
     switch (type) {
-      case 'event':
-        queryUrl = '/api/eventss/' + id;
+      case "event":
+        queryUrl = "/api/events/" + id;
         break;
-      case 'author':
-        queryUrl = '/api/authors/' + id;
+      case "author":
+        queryUrl = "/api/authors/" + id;
         break;
       default:
         return;
@@ -70,6 +75,8 @@ $(document).ready(function () {
 
         titleInput.val(data.title);
         bodyInput.val(data.body);
+        timeInput.val(data.time);
+
         authorId = data.AuthorId || data.id;
 
         updating = true;
@@ -78,14 +85,14 @@ $(document).ready(function () {
   }
 
   function getAuthors() {
-    $.get('/api/authors', renderAuthorList);
+    $.get("/api/authors", renderAuthorList);
   }
 
   function renderAuthorList(data) {
     if (!data.length) {
-      window.location.href = '/authors';
+      window.location.href = "/authors";
     }
-    $('.hidden').removeClass('hidden');
+    $(".hidden").removeClass("hidden");
     var rowsToAdd = [];
     for (var i = 0; i < data.length; i++) {
       rowsToAdd.push(createAuthorRow(data[i]));
@@ -98,19 +105,19 @@ $(document).ready(function () {
   }
 
   function createAuthorRow(author) {
-    var listOption = $('<option>');
-    listOption.attr('value', author.id);
+    var listOption = $("<option>");
+    listOption.attr("value", author.id);
     listOption.text(author.name);
     return listOption;
   }
 
   function updateEvent(event) {
     $.ajax({
-      method: 'PUT',
-      url: '/api/events',
+      method: "PUT",
+      url: "/api/events",
       data: event,
     }).then(function () {
-      window.location.href = '/home'; 
+      window.location.href = "/home";
     });
   }
 });

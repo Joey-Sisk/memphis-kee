@@ -23,7 +23,7 @@ $(document).ready(function () {
       console.log("Event", data);
       events = data;
       if (!events || !events.length) {
-        displayEmpty(author);
+        displayEmpty();
       } else {
         initializeRows();
       }
@@ -40,7 +40,7 @@ $(document).ready(function () {
   }
 
   function createNewRow(event) {
-    var formattedDate = new Date(event.createdAt);
+    var formattedDate = event.time;
     formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm a");
 
     var newEventCard = $("<div>");
@@ -81,21 +81,12 @@ $(document).ready(function () {
     return newEventCard;
   }
 
-  function displayEmpty(id) {
-    var query = window.location.search;
-    var partial = "";
-    if (id) {
-      partial = " for Author #" + id;
-    }
+  function displayEmpty() {
     eventContainer.empty();
     var messageH2 = $("<h2>");
     messageH2.css({ "text-align": "center", "margin-top": "50px" });
     messageH2.html(
-      "No events yet" +
-        partial +
-        ", navigate <a href='/cms" +
-        query +
-        "'>here</a> in order to get started."
+      "No events currently on the calendar, check back soon to see where Memphis Kee is playing next!"
     );
     eventContainer.append(messageH2);
   }
