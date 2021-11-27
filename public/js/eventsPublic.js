@@ -43,42 +43,22 @@ $(document).ready(function () {
     var formattedDate = event.time;
     formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm a");
 
-    var newEventCard = $("<div>");
-    newEventCard.addClass("card");
+    var newEventTableRow = $("<tr>");
 
-    var newEventCardHeading = $("<div>");
-    newEventCardHeading.addClass("card-header");
+    var newEventDate = $("<td>");
+    var newEventTitle = $("<td>");
+    var newEventBody = $("<td>");
 
-    var newEventTitle = $("<h2>");
-
-    var newEventDate = $("<small>");
-
-    var newEventAuthor = $("<h5>");
-    newEventAuthor.text("Written by: " + event.Author.name);
-    newEventAuthor.css({
-      float: "right",
-      color: "blue",
-      "margin-top": "-10px",
-    });
-
-    var newEventCardBody = $("<div>");
-    newEventCardBody.addClass("card-body");
-
-    var newEventBody = $("<p>");
-
-    newEventTitle.text(event.title + " ");
-    newEventBody.text(event.body);
     newEventDate.text(formattedDate);
+    newEventTitle.text(event.title);
+    newEventBody.text(event.body);
 
-    newEventTitle.append(newEventDate);
-    newEventCardHeading.append(newEventTitle);
-    newEventCardBody.append(newEventBody);
-    newEventCard.append(newEventCardHeading);
-    newEventCard.append(newEventCardBody);
+    newEventTableRow.append(newEventDate);
+    newEventTableRow.append(newEventTitle);
+    newEventTableRow.append(newEventBody);
+    newEventTableRow.data("event", event);
 
-    newEventCard.data("event", event);
-
-    return newEventCard;
+    return newEventTableRow;
   }
 
   function displayEmpty() {
