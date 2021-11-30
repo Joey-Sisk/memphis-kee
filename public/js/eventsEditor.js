@@ -51,6 +51,47 @@ $(document).ready(function () {
     eventContainer.append(eventsToAdd);
   }
 
+  function initializeRows() {
+    eventContainer.empty();
+    var eventsToAdd = [];
+    for (var i = 0; i < events.length; i++) {
+      eventsToAdd.push(createNewRow(events[i]));
+    }
+    eventContainer.append(eventsToAdd);
+  }
+
+  // function createNewRow(event) {
+  //   var formattedDate = event.time;
+  //   formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm a");
+
+  //   var newEventTableRow = $("<tr>");
+
+  //   var newEventDate = $("<td>");
+  //   var newEventTitle = $("<td>");
+  //   var newEventBody = $("<td>");
+  //   var deleteBtn = $("<button>");
+  //   var editBtn = $("<button>");
+
+  //   newEventDate.text(formattedDate);
+  //   newEventTitle.text(event.title);
+  //   newEventBody.text(event.body);
+  //   deleteBtn.text("DELETE");
+  //   editBtn.text("EDIT");
+
+  //   deleteBtn.addClass("delete btn btn-danger");
+  //   editBtn.addClass("edit btn btn-info float-none");
+
+  //   newEventTableRow.append(newEventDate);
+  //   newEventTableRow.append(newEventTitle);
+  //   newEventTableRow.append(newEventBody);
+  //   newEventTableRow.append(deleteBtn);
+  //   newEventTableRow.append(editBtn);
+
+  //   newEventTableRow.data("event", event);
+
+  //   return newEventTableRow;
+  // }
+
   function createNewRow(event) {
     var formattedDate = event.time;
     formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm a");
@@ -69,15 +110,15 @@ $(document).ready(function () {
     editBtn.text("EDIT");
     editBtn.addClass("edit btn btn-info");
 
-    var newEventTitle = $("<h2>");
+    var newEventTitle = $("<h3>");
 
     var newEventDate = $("<small>");
 
     var newEventAuthor = $("<h5>");
     newEventAuthor.text("Written by: " + event.Author.name);
     newEventAuthor.css({
-      float: "right",
-      color: "blue",
+      // float: "right",
+      color: "grey",
       "margin-top": "-10px",
     });
 
@@ -89,7 +130,7 @@ $(document).ready(function () {
     newEventBody.text(event.body);
     newEventDate.text(formattedDate);
     newEventTitle.append(newEventDate);
-  
+
     newEventCardHeading.append(deleteBtn);
     newEventCardHeading.append(editBtn);
     newEventCardHeading.append(newEventTitle);
@@ -100,9 +141,20 @@ $(document).ready(function () {
     newEventCard.append(newEventCardHeading);
     newEventCard.append(newEventCardBody);
     newEventCard.data("event", event);
-    
+
     return newEventCard;
   }
+
+  //   var deleteBtn = $("<button>");
+  //   deleteBtn.text("x");
+  //   deleteBtn.addClass("delete btn btn-danger");
+
+  //   var editBtn = $("<button>");
+  //   editBtn.text("EDIT");
+  //   editBtn.addClass("edit btn btn-info");
+
+  //   newEventCardHeading.append(deleteBtn);
+  //   newEventCardHeading.append(editBtn);
 
   function handleEventDelete() {
     var currentEvent = $(this).parent().parent().data("event");

@@ -53,7 +53,7 @@ $(document).ready(function () {
 
   function submitEvent(event) {
     $.post("/api/events", event, function () {
-      window.location.href = "/home";
+      window.location.href = "/";
     });
   }
 
@@ -117,7 +117,7 @@ $(document).ready(function () {
       url: "/api/events",
       data: event,
     }).then(function () {
-      window.location.href = "/home";
+      window.location.href = "/";
     });
   }
 });
