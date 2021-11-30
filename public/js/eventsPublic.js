@@ -41,7 +41,7 @@ $(document).ready(function () {
 
   function createNewRow(event) {
     var formattedDate = event.time;
-    formattedDate = moment(formattedDate).format("MM/DD/YYYY, h:mm a");
+    formattedDate = moment(formattedDate).format("MM/DD/YYYY, h:mma");
 
     var newEventTableRow = $("<tr>");
 
