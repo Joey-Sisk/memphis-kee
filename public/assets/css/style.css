@@ -111,7 +111,7 @@ h1 {
   background-size: cover;
 }
 
-.parallax-license {
+.parallax-footer {
   /* The image used */
   background-image: url("../images/dewarsAndBoot.jpg");
 
@@ -140,4 +140,45 @@ td {
   line-height: 25px;
   min-height: 25px;
   height: 25px;
+}
+
+@media (max-width: 820px){
+  .parallax {
+    /* The image used */
+    display: block;
+    background-image: url("");
+    content:url(../images/solo-sephia-compressed-resize.jpg);
+  
+    /* Set a specific height */
+    max-width: 100%;
+    max-height: 100%;
+    min-height: fit-content;
+    width: auto;
+    height: auto;
+  
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+  }
+
+  .parallax-footer {
+    /* The image used */
+    display: block;
+    background-image: url("../images/dewarsAndBoot.jpg");
+    content:url("../images/dewarsAndBoot.jpg");
+    /* Set a specific height */
+    max-width: 100%;
+    max-height: 100%;
+    min-height: fit-content;
+    width: auto;
+    height: auto;
+  
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+  }
 }
