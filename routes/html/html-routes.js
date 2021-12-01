@@ -21,4 +21,8 @@ router.get('/story', (req, res) => {
   res.sendFile(path.join(__dirname, '../../public/story.html'));
 });
 
+router.get('/epk', (req, res) => {
+  res.sendFile(path.join(__dirname, '../../public/epk.html'));
+});
+
 module.exports = router;
