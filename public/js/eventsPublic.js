@@ -31,12 +31,14 @@ $(document).ready(function () {
   }
 
   function initializeRows() {
+    let sortedEvents = events.sort((a,b) =>  new Date(b.time) - new Date(a.time));
     eventContainer.empty();
     var eventsToAdd = [];
-    for (var i = 0; i < events.length; i++) {
-      eventsToAdd.push(createNewRow(events[i]));
+    for (var i = 0; i < sortedEvents.length; i++) {
+      eventsToAdd.push(createNewRow(sortedEvents[i]));
     }
-    eventContainer.append(eventsToAdd);
+    console.log(eventsToAdd);
+    eventContainer.append(sortedEvents);
   }
 
   function createNewRow(event) {

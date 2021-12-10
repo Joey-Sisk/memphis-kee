@@ -102,13 +102,8 @@ h1 {
 }
 
 .parallax {
-  /* The image used */
   background-image: url("../images/solo-sephia-compressed-resize.jpg");
-
-  /* Set a specific height */
   min-height: 500px;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -116,13 +111,8 @@ h1 {
 }
 
 .parallax-footer {
-  /* The image used */
   background-image: url("../images/dewarsAndBoot.jpg");
-
-  /* Set a specific height */
   min-height: 500px;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -168,7 +158,7 @@ td {
   max-width: 100%;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   .parallax {
     background-attachment: inherit;
   }

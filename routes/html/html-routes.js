@@ -17,12 +17,12 @@ router.get('/authors', (req, res) => {
   res.sendFile(path.join(__dirname, '../../public/author-manager.html'));
 });
 
-router.get('/story', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/story.html'));
+router.get('/presskit', (req, res) => {
+  res.sendFile(path.join(__dirname, '../../public/presskit.html'));
 });
 
-router.get('/epk', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/epk.html'));
-});
+// router.get('/epk', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../../public/epk.html'));
+// });
 
 module.exports = router;
