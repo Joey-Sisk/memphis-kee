@@ -20,8 +20,12 @@ $(document).ready(function () {
       authorId = "/?author_id=" + authorId;
     }
     $.get("/api/events" + authorId, function (data) {
-      console.log("Event", data);
-      events = data;
+      console.log(data);
+      events = data.sort((a, b) => {
+        dateA = new Date(a.time).getTime();
+        dateB = new Date(b.time).getTime();
+        return dateA > dateB ? 1 : -1;
+      });
       if (!events || !events.length) {
         displayEmpty();
       } else {
@@ -31,14 +35,12 @@ $(document).ready(function () {
   }
 
   function initializeRows() {
-    let sortedEvents = events.sort((a,b) =>  new Date(b.time) - new Date(a.time));
     eventContainer.empty();
     var eventsToAdd = [];
-    for (var i = 0; i < sortedEvents.length; i++) {
-      eventsToAdd.push(createNewRow(sortedEvents[i]));
+    for (var i = 0; i < events.length; i++) {
+      eventsToAdd.push(createNewRow(events[i]));
     }
-    console.log(eventsToAdd);
-    eventContainer.append(sortedEvents);
+    eventContainer.append(eventsToAdd);
   }
 
   function createNewRow(event) {
