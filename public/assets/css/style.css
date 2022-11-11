@@ -44,7 +44,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  background-color: var(--colorBackgroundMain);
+  /* background-color: var(--colorBackgroundMain); */
 }
 
 p {
@@ -73,7 +73,7 @@ h1 {
 }
 
 .nav-bar {
-  background-color: var(--colorDark);
+  /* background-color: var(--colorDark); */
   position: fixed;
   width: 100%;
   padding: 1em;
@@ -101,8 +101,12 @@ h1 {
   transition: opacity 0.15s ease-out;
 }
 
+.logo-gold {
+  color: #e5a512 !important;
+}
+
 .parallax {
-  background-image: url("../images/solo-sephia-compressed-resize.jpg");
+  background-image: url("../images/EagleLogoWider.png");
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
