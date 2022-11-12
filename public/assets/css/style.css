@@ -105,6 +105,10 @@ h1 {
   color: #e5a512 !important;
 }
 
+.link-blue {
+  background-color: #2a9fd6 !important;
+}
+
 .parallax {
   background-image: url("../images/EagleLogoWider.png");
   min-height: 500px;
