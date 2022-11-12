@@ -101,6 +101,11 @@ h1 {
   transition: opacity 0.15s ease-out;
 }
 
+.navbar-bandname {
+  font-weight: bolder;
+  font-family: Bookman, URW Bookman L, serif;
+}
+
 .logo-gold {
   color: #e5a512 !important;
 }
