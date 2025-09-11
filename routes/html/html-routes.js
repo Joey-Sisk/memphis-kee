@@ -2,7 +2,7 @@ const router = require('express').Router();
 const path = require('path');
 
 router.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/home.html'));
+  res.sendFile(path.join(__dirname, '../../public/album.html'));
 });
 
 router.get('/cms', (req, res) => {
@@ -19,6 +19,10 @@ router.get('/authors', (req, res) => {
 
 router.get('/presskit', (req, res) => {
   res.sendFile(path.join(__dirname, '../../public/presskit.html'));
+});
+
+router.get('/tour', (req, res) => {
+  res.sendFile(path.join(__dirname, '../../public/tour.html'));
 });
 
 // router.get('/epk', (req, res) => {
