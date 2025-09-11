@@ -16,6 +16,7 @@
   --colorTextMain: #e2e2e2;
   --colorTextAccent: #30ffb6;
   --logoGold: #e5a512;
+  --darkSkiesOrange: #d25a2751;
 }
 
 ul[role="list"],
@@ -130,6 +131,10 @@ h1 {
 
 .logo-yellow {
   color: var(--logoYellow) !important;
+}
+
+.logo-khaki {
+  color: var(--khaki) !important;
 }
 
 .link-blue {
