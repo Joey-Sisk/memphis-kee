@@ -5,10 +5,17 @@
 }
 
 :root {
-  --colorBackgroundMain: #333;
-  --colorDark: #0d0d18;
+  --colorBackgroundMain: #2c2212;
+  --greenBold: #3A4C36ff;
+  --logoBlue: #182A5Eff;
+  --lightBlue: #608796ff;
+  --khaki: #BFB79Eff;
+  --khakiDark: #A38C57ff;
+  --field-drab: #605A1Dff;
+  --logoYellow: #f5edb5;
   --colorTextMain: #e2e2e2;
   --colorTextAccent: #30ffb6;
+  --logoGold: #e5a512;
 }
 
 ul[role="list"],
@@ -44,7 +51,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  /* background-color: var(--colorBackgroundMain); */
+  background-color: var(--colorBackgroundMain); 
 }
 
 p {
@@ -63,6 +70,10 @@ h1 {
   color: var(--colorTextMain);
 }
 
+.fa {
+  color: var(--lightBlue); 
+}
+
 .center-all {
   max-width: 64rem;
   margin: 0 auto;
@@ -72,8 +83,11 @@ h1 {
   text-align: center;
 }
 
+.navbar {
+  background-color: var(--greenBold) !important;
+}
+
 .nav-bar {
-  /* background-color: var(--colorDark); */
   position: fixed;
   width: 100%;
   padding: 1em;
@@ -107,11 +121,19 @@ h1 {
 }
 
 .logo-gold {
-  color: #e5a512 !important;
+  color: var(--logoGold) !important;
+}
+
+.logo-blue {
+  color: var(--logoBlue) !important;
+}
+
+.logo-yellow {
+  color: var(--logoYellow) !important;
 }
 
 .link-blue {
-  background-color: #2a9fd6 !important;
+  background-color: var(--lightBlue) !important;
   border: none;
 }
 
