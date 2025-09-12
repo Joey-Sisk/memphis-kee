@@ -6,12 +6,12 @@
 
 :root {
   --colorBackgroundMain: #2c2212;
-  --greenBold: #3A4C36ff;
-  --logoBlue: #182A5Eff;
+  --greenBold: #3a4c36ff;
+  --logoBlue: #182a5eff;
   --lightBlue: #608796ff;
-  --khaki: #BFB79Eff;
-  --khakiDark: #A38C57ff;
-  --field-drab: #605A1Dff;
+  --khaki: #bfb79eff;
+  --khakiDark: #a38c57ff;
+  --field-drab: #605a1dff;
   --logoYellow: #f5edb5;
   --colorTextMain: #e2e2e2;
   --colorTextAccent: #30ffb6;
@@ -52,7 +52,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  background-color: var(--colorBackgroundMain); 
+  background-color: var(--colorBackgroundMain);
 }
 
 p {
@@ -72,7 +72,7 @@ h1 {
 }
 
 .fa {
-  color: var(--lightBlue); 
+  color: var(--lightBlue);
 }
 
 .center-all {
@@ -86,6 +86,13 @@ h1 {
 
 .navbar {
   background-color: var(--greenBold) !important;
+}
+
+.navbar-toggler {
+  border-color: var(--logoYellow) !important;
+}
+.navbar-toggler-icon {
+  filter: brightness(0) saturate(100%) invert(92%) sepia(61%) saturate(749%) hue-rotate(8deg) brightness(104%) contrast(101%);
 }
 
 .nav-bar {
@@ -126,7 +133,7 @@ h1 {
 }
 
 .logo-blue {
-  color: var(--logoBlue) !important;
+  color: var(--lightBlue) !important;
 }
 
 .logo-yellow {

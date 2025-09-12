@@ -78,42 +78,73 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link logo-yellow" href="/">Dark Skies
-              <!-- <span class="sr-only">(current)</span> -->
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link logo-yellow" href="/tour">Tour Dates</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link logo-yellow" href="/presskit">Press Kit</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link logo-yellow" href="https://memphiskee.bigcartel.com/products">Merch</a>
-          </li>
-        </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link logo-yellow" href="/"
+                >Dark Skies
+                <!-- <span class="sr-only">(current)</span> -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link logo-yellow" href="/tour">Tour Dates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link logo-yellow" href="/presskit">Press Kit</a>
+            </li>
+                <li class="nav-item">
+              <a
+                class="nav-link logo-yellow"
+                href="https://memphiskee.bigcartel.com/products"
+                >Merch</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
     <!-- Main Container -->
     <div class="container d-flex flex-column min-vh-100">
-      <!-- Album Cover -->
-      <img
-        class="img-fluid"
-        src="./assets/images/MemphisKeeDarkSkiesAlbumArt.png"
-        alt="Dark Skies album cover art"
-      />
+
+      <!-- Side by side images -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <!-- Album Cover -->
+            <a
+            href="https://open.spotify.com/album/7bLaIy5hxgYm8WFPh2xJOL?si=U1mX4Yk6S3uYHhE1mXv0Vw"
+            target="_blank"
+            rel="noopener"
+            >
+            <img
+              class="img-fluid"
+              src="./assets/images/MemphisKeeDarkSkiesAlbumArt.png"
+              alt="Dark Skies album cover art"
+            />
+          </a>
+          </div>
+        <div class="col">
+        <!-- I'll Come Running single art -->
+        <a
+          href="https://www.youtube.com/watch?v=lN9aTEFeSLc"
+          target="_blank"
+          rel="noopener"
+        >
+        <img
+          src="./assets/images/IllComeRunninSingleArt.jpg"
+          class="img-fluid"
+          alt="I'll Come Running single art"
+        />
+      </a>
+    </div>
+    </div>
 
       <!-- Single Announcement -->
-      <div class="container my-3"></div>
+      <br />
       <hr />
       <h4 class="text-center logo-khaki">
         NEW SINGLE
-        <em
-          ><b>
+        <b class="logo-blue">
             <a
               href="https://www.youtube.com/watch?v=lN9aTEFeSLc"
               target="_blank"
@@ -122,28 +153,35 @@
             >
               I'LL COME RUNNIN'
             </a>
-          </b></em
-        >
+          </b>
         <br />
-        HIGHLY ANTICIPATED SOPHOMORE ALBUM <em><b>DARK SKIES</b></em> OUT
+        <br />
+        HIGHLY ANTICIPATED SOPHOMORE ALBUM <b class="logo-blue"><a href="https://open.spotify.com/album/7bLaIy5hxgYm8WFPh2xJOL?si=U1mX4Yk6S3uYHhE1mXv0Vw" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline">DARK SKIES</a></b> OUT
         1/16/26!
         <hr />
         <br />
       </h4>
 
-      <!-- I'll Come Running single art -->
-      <a
-        href="https://www.youtube.com/watch?v=lN9aTEFeSLc"
-        target="_blank"
-        rel="noopener"
-      >
-        <img
-          src="./assets/images/IllComeRunninSingleArt.jpg"
-          class="img-fluid"
-          alt="I'll Come Running single art"
-        />
-      </a>
+      <!-- Spotify Embed -->
+      <iframe
+        data-testid="embed-iframe"
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/album/7bLaIy5hxgYm8WFPh2xJOL?utm_source=generator"
+        width="100%"
+        height="352"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+
+      <br />
+
+
     </div>
+
+    <br />
+    <br />
 
     <!-- Footer -->
     <footer class="mt-auto">
