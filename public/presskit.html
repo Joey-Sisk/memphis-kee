@@ -1,320 +1,507 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memphis Kee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Memphis Kee</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Latest compiled and minified CSS & JS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
-  <!-- <link
+    <!-- Latest compiled and minified CSS & JS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css"
       integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN"
       crossorigin="anonymous"
     /> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.2/cyborg/bootstrap.min.css"
-    integrity="sha512-LO/i4F5fAzg8t9KVCLBHBMrso1D+xALfkt852Fm6YPJGgySO0gCFwJ5aNll7y64evHWeK5C6R+2bKCICHBGp1Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <script src="https://code.jquery.com/jquery.js"></script>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.2/cyborg/bootstrap.min.css"
+      integrity="sha512-LO/i4F5fAzg8t9KVCLBHBMrso1D+xALfkt852Fm6YPJGgySO0gCFwJ5aNll7y64evHWeK5C6R+2bKCICHBGp1Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="css/styles.css"
+      media="screen"
+      title="no title"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+  </head>
 
-<body>
-  <!-- Nav Bar -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <!-- <a class="logo-gold navbar-brand fs-3 navbar-bandname" href="/">Memphis Kee</a> -->
-      <a class="navbar-brand fs-3 navbar-bandname" href="/">
-        <img src="./assets/images/LogoNoBue.png" alt="Memphis Kee Logo" style="height: 60px;" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
-        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link logo-yellow" href="/">Dark Skies
-              <!-- <span class="sr-only">(current)</span> -->
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link logo-yellow" href="/tour">Tour Dates</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link logo-yellow" href="/presskit">Press Kit</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link logo-yellow" href="https://memphiskee.bigcartel.com/products">Merch</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link logo-yellow" href="#contact-nav">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container d-flex flex-column min-vh-100">
-
-    <img class="img-fluid" src="./assets/images/MemphisKeeMKpick14x9.jpg"
-      alt="Memphis holding out guitar pick to camera">
-
-    <!-- Social Links -->
-    <div class="container-fluid">
-      <div class="d-flex justify-content-end">
-        <a href="https://www.instagram.com/memphis_kee/?hl=en">
-          <i class="fa fa-instagram fa-2x p-2" aria-hidden="true"></i>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- <a class="logo-gold navbar-brand fs-3 navbar-bandname" href="/">Memphis Kee</a> -->
+        <a class="navbar-brand fs-3 navbar-bandname" href="/">
+          <img
+            src="./assets/images/LogoNoBue.png"
+            alt="Memphis Kee Logo"
+            style="height: 60px"
+          />
         </a>
-        <a href="https://www.youtube.com/channel/UCtGYy1FuqK0ufQxm3lb5F7A">
-          <i class="fa fa-youtube-play fa-2x p-2" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.facebook.com/memphiskee">
-          <i class="fa fa-facebook fa-2x p-2" aria-hidden="true"></i>
-        </a>
-        <a href="https://twitter.com/memphiskee?lang=en">
-          <i class="fa fa-twitter fa-2x p-2" aria-hidden="true"></i>
-        </a>
-        <a href="https://music.apple.com/us/artist/memphis-kee/1182070266">
-          <i class="fa fa-apple fa-2x p-2" aria-hidden="true"></i>
-        </a>
-        <a href="https://open.spotify.com/artist/3ScaoHVbzeHsyt3z7Rull6">
-          <i class="fa fa-spotify fa-2x p-2" aria-hidden="true"></i>
-        </a>
-      </div>
-    </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor02"
+          aria-controls="navbarColor02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- About/Story -->
-    <div class="container my-3"></div>
-    <h3 class="logo-yellow text-center">About Memphis Kee</h3>
-    <hr />
-    <p class="text-center my-5 mx-auto">
-      Memphis Kee knows exactly what they are — and what they’re not. They’re not trend-chasers or opportunists looking for a quick payoff. They’re veterans of a music scene that blends country grit with rock energy. Intricacy and force. Lyricism and feel. Oklahoma and Texas. As more rock-edged Red Dirt makes a resurgence, Memphis Kee has been firmly and confidently planted on the front lines, perfecting this sound — not adopting it. This powerhouse Austin-based quintet has spent the past several years building a loyal fanbase and touring on the strength of the overwhelmingly positive reception to their previous LP, Wimberley. Now, with the release of their highly anticipated sophomore album, they showcase Kee’s powerful vocals and sharply aware songwriting, backed by the band’s technical skill and sonic agility. Memphis Kee is poised to stand out in this compelling new generation of Red Dirt acts.
-      <br />
-      <br />
-      The band’s new album, Dark Skies, showcases the evolution of their sound and perspective. A follow-up to the band’s initial EP, 6th & San Jacinto, and their first full length effort, their widely acclaimed album Wimberley, it is a clear step forward from those releases that came before. 
-      <br />
-      <br />
-      Recorded at Yellow DOG Studios in San Marcos Texas, Dark Skies was produced by Grammy Award-winner Adam Odor, engineered by Casey Johns and Ethan Lugbauer, mixed by Kevin Szymanski, and mastered by Eric Conn. The band’s line-up includes Memphis  Kee (lead vocals, rhythm guitar), Spencer Carlson (lead guitar, harp, vocals), Paul Pinon (drums), Joey Sisk (bass), Chris Loyd (keys, guitar, vocals) and Jake Waylon (second guitar, keys, organ, harmonica, mandolin, and harmony vocals). Jamie Lin Wilson lends co-lead, background vocals and a co-write to the song “Bewitched.” 
-      <br />
-      <br />
-      Kee explains that the The Dark Skies concept is essentially twofold — one negative and one positive. “Things are very ominous in the world lately, things seem uncertain, and it's been hard on a lot of people,” he continues. “So I think that's part of the shift in tone and the subject matter.  But, there’s a brighter side.  My seven-year-old daughter McKinley and I share a deep connection  through our love of space.. If you listen to the record, you’ll see there's some sort of celestial or skyward reference in every song. Some are literal or figurative, and some are deeper, talking about time moving forward at different speeds.”
-      <br />
-      <br />
-      The music runs the gamut, from the steady strides of “I’ll Come Runnin,” “Pedro,” and “Starting Over,” to the decisive determination that drives “All the Rest,” the discontent that underscores “With None” and eventually, the raucous shredding and workingman’s worry of “Twenty Dollar Chain.” On the other hand, it offers the seductive strains that emanate from Kee and the immensely talented and respected Wilson on “Bewitched,” the meditative mood and hypnotizing harmonies of “Hummingbird,” the down home desire, depression and desperation  shared with “Black Butterfly,” and ultimately, the sheer heartbreak expressed in “Being A Kid.”
-      <br />
-      <br />
-      Kee points to  “Hummingbird” as a standout. “It’s a relationship song,  really about the wreckage of forbidden love and infidelities,” he says. He also credits his daughter for helping on ‘Black Butterfly.’ She hears all my new songs first,” he says. “I was stuck on the bridge, and she suggested, ‘Daddy, why don’t you just sing fly away?’ I knew immediately it was the right choice. McKinley is now a credited songwriter on the record — and I don’t know who’s prouder, her or me.”
-      <br />
-      <br />
-      That brings him to the track titled “Being A Kid,” which was written in the aftermath of the horrific school shooting in Uvalde,Texas. The song describes his feelings as his daughter began her first day of school and the trepidation that any parent might feel given the terrible possibilities that impact even the youngest victims. The song evoked such raw emotions from everyone that heard it that Kee considered putting it out as a solo song until he was convinced by his bandmates that it belonged on Dark Skies. 
-      <br />
-      <br />
-      Formed in 2020, Memphis Kee have always shown the ability to connect with their audiences. Early on, they honed their skills on the live circuit with propulsive performances that found them pulling from a diverse catalog of raucous barroom country, classic stories of love and loss and even gritty old-school murder ballads. 
-      <br />
-      <br />
-      They’ve also earned critical praise along the way. Saving Country Music named Wimberley an Essential Album of 2022, noting Memphis’ “intensely personal stories” delivered with “a country rock wallop” and comparing his approach to Guy Clark and Townes Van Zandt. Whiskey Riff called him “the red dirt rocker [with] all of the tools to be a household name,” while Country Music France declared, “Wimberley is absolutely brilliant.”
-      <br />
-      <br />
-      Raised in Memphis, TN, Kee taught himself bass while attending the University of Memphis, where he co-founded the band Rambus. A 2002 South by Southwest performance brought him to Austin, now his home, and inspired his debut EP, 6th and San Jacinto.
-      <br />
-      <br />
-      With ten years as a detective and six as a PI, his work on cold cases and undercover ops gave him insights that now fuel his songwriting.
-      <br />
-      <br />
-      The lineup began in 2019 when Joey Sisk joined after his band opened for Kee, soon followed by Spencer Carlson, who clicked with Kee at an open mic. Paul Pinon came aboard in early 2021, and Chris Loyd joined in spring 2025. Multi-instrumentalist Jake Waylon contributed vocals, guitar, mandolin, harmonica, and keys from 2022 until spring 2025.
-      <br />
-      <br />
-      Momentum continues to surge with recent signings to Edgewater Music Group for major label distribution and Western Grunge Records for management, booking, and promotion, signaling high expectations for what’s ahead.
-      <br />
-      <br />
-      With Dark Skies, Memphis Kee shows they are more than just part of the Red Dirt and Americana scene - they are setting their own pace, forging their own path. The album puts their tenacious, unflinchingly honest, and hard-earned songwriting front and center, marking them as a band that belongs in the conversation about where the scene is going next.
-      <br />
-      <br />
-      “When you keep pushing forward, time has a way of honing things. And it has done that with us. For the first time, Memphis Kee is five musicians moving in the same direction at the same speed. We've passed the point of figuring out who we are. With this record, we hope that now is the time that everyone else finds that out as well.”
-    </p>
-
-    <br /><br />
-
-    <img class="img-fluid" src="./assets/images/MemphisKeeSpotifyCover.png"
-      alt="The band standing on uneven rocks">
-
-    <br /><br />
-
-    <h3 class="logo-yellow text-center">Reviews and Featured Playlists</h3>
-    <hr />
-    <p class="text-center my-3 mx-auto">
-
-      Memphis Kee's album Wimberley was reviewed by Saving Country Music receiving a very positive "1 1/2 Guns Up".
-      <br /> <a href="https://www.savingcountrymusic.com/album-review-memphis-kees-wimberley/">Saving Country Music</a>
-      <br />
-
-      <br />
-      Memphis Kee's song Anabelle off the new album Wimberley was added to Saving Country Music's top 25 playlist #107 on
-      10/28/2022. <br /> <a href="https://www.savingcountrymusic.com/tag/memphis-kee/">Saving Country Music</a>
-      <br />
-
-      <br />
-      The bands first album Wimberley was reviewed by Alternative Root. <br /> <a
-        href="http://www.thealternateroot.com/all-reviews/memphis-kee-from-the-album-wimberley">The Alternative Root</a>
-      <br />
-
-      <br />
-      Memphis Kee earned the #18 spot on Swedish Country Music blog In The Circle's "Best Albums of 2022". <br /> <a
-        href="https://www.facebook.com/memphiskee/posts/pfbid0hARCY3hP8EuC4qZ6ezpsNXHJBrTuRLwCrCrWA2ioatEgtsbKEGfScLzWEafKhLi8l">In
-        The Circle</a>
-      <br />
-
-      <br />
-      The Amp reviewed Memphis Kee's first full-length album Wimberley. <br /> <a
-        href="https://turnuptheamp.com/home/2022/11/2/memphis-kee-debuts-wimberley">The Amp</a>
-      <br />
-
-      <br />
-      Memphis Kee's cover of the Ryan Adams song Come Pick Me Up is currently on the Farce The Music "Reboot" Spotify
-      playlist. <br /> <a href="https://open.spotify.com/playlist/19qVsIwfOXVjSAZn3hUmtw?si=35ea6e3438c84053">Farce The
-        Music</a>
-      <br />
-
-      <br />
-      The band played the single Anabelle from the new album Wimberley on the Fox 7 Good Day Austin's music segment, the
-      first full band to do so since returning from the pandemic. <br /> <a
-        href="https://www.fox7austin.com/video/1139120">Good Morning Austin</a>
-      <br />
-
-      <br />
-      Come Pick Me Up, the only cover on Memphis Kee's new album is currently featured on the BMI Texas Ten playlist.
-      <br /> <a href="https://open.spotify.com/playlist/6iVKxrv9pkBW8s3IcR2bq0">BMI Texas Ten</a>
-      <br />
-    </p>
-
-
-
-    <hr />
-
-    <div class="video-container my-3">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/lN9aTEFeSLc?si=83MXLH8vcrXjJLAr" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
-
-    <div class="container my-3"></div>
-    <h3 class="logo-yellow text-center">Accolades</h3>
-    <hr />
-    <div class="container my-3">
-      <div class="row">
-        <div class="col-sm">
-          <h5 class="text-center mx-auto">Shared the Stage With: <br /></h5>
-          <p class="text-center mx-auto">
-            Jason Boland &amp; The Stragglers <br />
-            Stoney LaRue <br />
-            Pat Green <br />
-            The Bellamy Brothers <br />
-            Roger Creager <br />
-            Brandon Rhyder <br />
-            Chris Knight <br />
-            John Fullbright <br />
-            Silverada <br />
-            Doug Stone <br />
-            Vandoliers <br />
-            Kevin Fowler <br />
-          </p>
-        </div>
-        <div class="col-sm">
-          <h5 class="text-center mx-auto">Performed At: <br /></h5>
-          <p class="text-center mx-auto">
-            Gruene Hall <br />
-            Saxon Pub <br />
-            Stubb’s BBQ Graceland <br />
-            Love &amp; War in Texas <br />
-            The Globe Theater <br />
-            Devil's Backbone Tavern <br />
-            Hernandos Hideaway <br />
-            Magnolia Motor Lounge <br />
-            Poodies Roadhouse <br />
-            Summer Solstice Festival <br />
-            Two Step Inn Kickoff <br />
-            Carol's Pub <br />
-            Buck's Bar & Grill <br />
-            The Mercury Lounge <br />
-            MusicFest at Steamboat Showcase <br />
-          </p>
-        </div>
-        <div class="col-sm">
-          <h5 class="text-center mx-auto">Additional Facts: <br /></h5>
-          <p class="text-center mx-auto">
-            Edgewater Music Group - Distribution <br />
-            Western Grunge Records - Management and Booking <br />
-            Shiner Beer Sponsored Artist <br />
-            Jenarayte - Radio Promotion <br />
-            Alexis Tedford - Publicity <br />
-            Dewars Scotch - Sponsorship <br />
-            600,000+ Spotify Streams <br />
-            Saving Country Music - Essential Album of the Year (Wimberley 2022) <br />
-            Seven Album of the Year List inclusions(Wimberley) <br />
-          </p>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link logo-yellow" href="/"
+                >Dark Skies
+                <!-- <span class="sr-only">(current)</span> -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link logo-yellow" href="/tour">Tour Dates</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link logo-yellow" href="/presskit">Press Kit</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link logo-yellow"
+                href="https://memphiskee.bigcartel.com/products"
+                >Merch</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link logo-yellow" href="#contact-nav">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
 
-    <hr />
-    <br />
+    <div class="container d-flex flex-column min-vh-100">
+      <img
+        class="img-fluid"
+        src="./assets/images/MemphisKeeMKpick14x9.jpg"
+        alt="Memphis holding out guitar pick to camera"
+      />
 
-    <iframe style="border-radius:12px"
-      src="https://open.spotify.com/embed/album/0kGlulDbTHe4KrU2AKNZ2M?utm_source=generator" width="100%" height="380"
-      frameBorder="0" allowfullscreen=""
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <!-- Social Links -->
+      <div class="container-fluid">
+        <div class="d-flex justify-content-end">
+          <a href="https://www.instagram.com/memphis_kee/?hl=en">
+            <i class="fa fa-instagram fa-2x p-2" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCtGYy1FuqK0ufQxm3lb5F7A">
+            <i class="fa fa-youtube-play fa-2x p-2" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.facebook.com/memphiskee">
+            <i class="fa fa-facebook fa-2x p-2" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/memphiskee?lang=en">
+            <i class="fa fa-twitter fa-2x p-2" aria-hidden="true"></i>
+          </a>
+          <a href="https://music.apple.com/us/artist/memphis-kee/1182070266">
+            <i class="fa fa-apple fa-2x p-2" aria-hidden="true"></i>
+          </a>
+          <a href="https://open.spotify.com/artist/3ScaoHVbzeHsyt3z7Rull6">
+            <i class="fa fa-spotify fa-2x p-2" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
 
-    <!-- Contact Form -->
-    <div class="container w-90 mx-auto my-5">
-      <h3 class="logo-yellow mt-3" id="contact-nav">Contact Memphis Kee</h3>
+      <!-- About/Story -->
+      <div class="container my-3"></div>
+      <h3 class="logo-yellow text-center">About Memphis Kee</h3>
       <hr />
-      <form class="mt-3 mb-3" action="https://formspree.io/f/xrgjgppl" method="POST">
-        <fieldset>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Your Email</label>
-            <input type="email" name="_replyto" class="form-control" id="exampleInputEmail1"
-              aria-describedby="emailHelp" placeholder="Enter email" />
+      <p class="text-center my-5 mx-auto">
+        Memphis Kee knows exactly what they are — and what they’re not. They’re
+        not trend-chasers or opportunists looking for a quick payoff. They’re
+        veterans of a music scene that blends country grit with rock energy.
+        Intricacy and force. Lyricism and feel. Oklahoma and Texas. As more
+        rock-edged Red Dirt makes a resurgence, Memphis Kee has been firmly and
+        confidently planted on the front lines, perfecting this sound — not
+        adopting it. This powerhouse Austin-based quintet has spent the past
+        several years building a loyal fanbase and touring on the strength of
+        the overwhelmingly positive reception to their previous LP, Wimberley.
+        Now, with the release of their highly anticipated sophomore album, they
+        showcase Kee’s powerful vocals and sharply aware songwriting, backed by
+        the band’s technical skill and sonic agility. Memphis Kee is poised to
+        stand out in this compelling new generation of Red Dirt acts.
+        <br />
+        <br />
+        The band’s new album, Dark Skies, showcases the evolution of their sound
+        and perspective. A follow-up to the band’s initial EP, 6th & San
+        Jacinto, and their first full length effort, their widely acclaimed
+        album Wimberley, it is a clear step forward from those releases that
+        came before.
+        <br />
+        <br />
+        Recorded at Yellow DOG Studios in San Marcos Texas, Dark Skies was
+        produced by Grammy Award-winner Adam Odor, engineered by Casey Johns and
+        Ethan Lugbauer, mixed by Kevin Szymanski, and mastered by Eric Conn. The
+        band’s line-up includes Memphis Kee (lead vocals, rhythm guitar),
+        Spencer Carlson (lead guitar, harp, vocals), Paul Pinon (drums), Joey
+        Sisk (bass), Chris Loyd (keys, guitar, vocals) and Jake Waylon (second
+        guitar, keys, organ, harmonica, mandolin, and harmony vocals). Jamie Lin
+        Wilson lends co-lead, background vocals and a co-write to the song
+        “Bewitched.”
+        <br />
+        <br />
+        Kee explains that the The Dark Skies concept is essentially twofold —
+        one negative and one positive. “Things are very ominous in the world
+        lately, things seem uncertain, and it's been hard on a lot of people,”
+        he continues. “So I think that's part of the shift in tone and the
+        subject matter. But, there’s a brighter side. My seven-year-old daughter
+        McKinley and I share a deep connection through our love of space.. If
+        you listen to the record, you’ll see there's some sort of celestial or
+        skyward reference in every song. Some are literal or figurative, and
+        some are deeper, talking about time moving forward at different speeds.”
+        <br />
+        <br />
+        The music runs the gamut, from the steady strides of “I’ll Come Runnin,”
+        “Pedro,” and “Starting Over,” to the decisive determination that drives
+        “All the Rest,” the discontent that underscores “With None” and
+        eventually, the raucous shredding and workingman’s worry of “Twenty
+        Dollar Chain.” On the other hand, it offers the seductive strains that
+        emanate from Kee and the immensely talented and respected Wilson on
+        “Bewitched,” the meditative mood and hypnotizing harmonies of
+        “Hummingbird,” the down home desire, depression and desperation shared
+        with “Black Butterfly,” and ultimately, the sheer heartbreak expressed
+        in “Being A Kid.”
+        <br />
+        <br />
+        Kee points to “Hummingbird” as a standout. “It’s a relationship song,
+        really about the wreckage of forbidden love and infidelities,” he says.
+        He also credits his daughter for helping on ‘Black Butterfly.’ She hears
+        all my new songs first,” he says. “I was stuck on the bridge, and she
+        suggested, ‘Daddy, why don’t you just sing fly away?’ I knew immediately
+        it was the right choice. McKinley is now a credited songwriter on the
+        record — and I don’t know who’s prouder, her or me.”
+        <br />
+        <br />
+        That brings him to the track titled “Being A Kid,” which was written in
+        the aftermath of the horrific school shooting in Uvalde,Texas. The song
+        describes his feelings as his daughter began her first day of school and
+        the trepidation that any parent might feel given the terrible
+        possibilities that impact even the youngest victims. The song evoked
+        such raw emotions from everyone that heard it that Kee considered
+        putting it out as a solo song until he was convinced by his bandmates
+        that it belonged on Dark Skies.
+        <br />
+        <br />
+        Formed in 2020, Memphis Kee have always shown the ability to connect
+        with their audiences. Early on, they honed their skills on the live
+        circuit with propulsive performances that found them pulling from a
+        diverse catalog of raucous barroom country, classic stories of love and
+        loss and even gritty old-school murder ballads.
+        <br />
+        <br />
+        They’ve also earned critical praise along the way. Saving Country Music
+        named Wimberley an Essential Album of 2022, noting Memphis’ “intensely
+        personal stories” delivered with “a country rock wallop” and comparing
+        his approach to Guy Clark and Townes Van Zandt. Whiskey Riff called him
+        “the red dirt rocker [with] all of the tools to be a household name,”
+        while Country Music France declared, “Wimberley is absolutely
+        brilliant.”
+        <br />
+        <br />
+        Raised in Memphis, TN, Kee taught himself bass while attending the
+        University of Memphis, where he co-founded the band Rambus. A 2002 South
+        by Southwest performance brought him to Austin, now his home, and
+        inspired his debut EP, 6th and San Jacinto.
+        <br />
+        <br />
+        With ten years as a detective and six as a PI, his work on cold cases
+        and undercover ops gave him insights that now fuel his songwriting.
+        <br />
+        <br />
+        The lineup began in 2019 when Joey Sisk joined after his band opened for
+        Kee, soon followed by Spencer Carlson, who clicked with Kee at an open
+        mic. Paul Pinon came aboard in early 2021, and Chris Loyd joined in
+        spring 2025. Multi-instrumentalist Jake Waylon contributed vocals,
+        guitar, mandolin, harmonica, and keys from 2022 until spring 2025.
+        <br />
+        <br />
+        Momentum continues to surge with recent signings to Edgewater Music
+        Group for major label distribution and Western Grunge Records for
+        management, booking, and promotion, signaling high expectations for
+        what’s ahead.
+        <br />
+        <br />
+        With Dark Skies, Memphis Kee shows they are more than just part of the
+        Red Dirt and Americana scene - they are setting their own pace, forging
+        their own path. The album puts their tenacious, unflinchingly honest,
+        and hard-earned songwriting front and center, marking them as a band
+        that belongs in the conversation about where the scene is going next.
+        <br />
+        <br />
+        “When you keep pushing forward, time has a way of honing things. And it
+        has done that with us. For the first time, Memphis Kee is five musicians
+        moving in the same direction at the same speed. We've passed the point
+        of figuring out who we are. With this record, we hope that now is the
+        time that everyone else finds that out as well.”
+      </p>
+
+      <br /><br />
+
+      <img
+        class="img-fluid"
+        src="./assets/images/MemphisKeeSpotifyCover.png"
+        alt="The band standing on uneven rocks"
+      />
+
+      <br /><br />
+
+      <h3 class="logo-yellow text-center">Reviews and Featured Playlists</h3>
+      <hr />
+      <p class="text-center my-3 mx-auto">
+        Memphis Kee's album Wimberley was reviewed by Saving Country Music
+        receiving a very positive "1 1/2 Guns Up".
+        <br />
+        <a
+          href="https://www.savingcountrymusic.com/album-review-memphis-kees-wimberley/"
+          >Saving Country Music</a
+        >
+        <br />
+
+        <br />
+        Memphis Kee's song Anabelle off the new album Wimberley was added to
+        Saving Country Music's top 25 playlist #107 on 10/28/2022. <br />
+        <a href="https://www.savingcountrymusic.com/tag/memphis-kee/"
+          >Saving Country Music</a
+        >
+        <br />
+
+        <br />
+        The bands first album Wimberley was reviewed by Alternative Root. <br />
+        <a
+          href="http://www.thealternateroot.com/all-reviews/memphis-kee-from-the-album-wimberley"
+          >The Alternative Root</a
+        >
+        <br />
+
+        <br />
+        Memphis Kee earned the #18 spot on Swedish Country Music blog In The
+        Circle's "Best Albums of 2022". <br />
+        <a
+          href="https://www.facebook.com/memphiskee/posts/pfbid0hARCY3hP8EuC4qZ6ezpsNXHJBrTuRLwCrCrWA2ioatEgtsbKEGfScLzWEafKhLi8l"
+          >In The Circle</a
+        >
+        <br />
+
+        <br />
+        The Amp reviewed Memphis Kee's first full-length album Wimberley. <br />
+        <a
+          href="https://turnuptheamp.com/home/2022/11/2/memphis-kee-debuts-wimberley"
+          >The Amp</a
+        >
+        <br />
+
+        <br />
+        Memphis Kee's cover of the Ryan Adams song Come Pick Me Up is currently
+        on the Farce The Music "Reboot" Spotify playlist. <br />
+        <a
+          href="https://open.spotify.com/playlist/19qVsIwfOXVjSAZn3hUmtw?si=35ea6e3438c84053"
+          >Farce The Music</a
+        >
+        <br />
+
+        <br />
+        The band played the single Anabelle from the new album Wimberley on the
+        Fox 7 Good Day Austin's music segment, the first full band to do so
+        since returning from the pandemic. <br />
+        <a href="https://www.fox7austin.com/video/1139120"
+          >Good Morning Austin</a
+        >
+        <br />
+
+        <br />
+        Come Pick Me Up, the only cover on Memphis Kee's new album is currently
+        featured on the BMI Texas Ten playlist.
+        <br />
+        <a href="https://open.spotify.com/playlist/6iVKxrv9pkBW8s3IcR2bq0"
+          >BMI Texas Ten</a
+        >
+        <br />
+      </p>
+
+      <hr />
+
+      <div class="video-container my-3">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/yWtrpVTqcXo?si=yglLseIiwVJkjCM2"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="container my-3"></div>
+      <h3 class="logo-yellow text-center">Accolades</h3>
+      <hr />
+      <div class="container my-3">
+        <div class="row">
+          <div class="col-sm">
+            <h5 class="text-center mx-auto">Shared the Stage With: <br /></h5>
+            <p class="text-center mx-auto">
+              Jason Boland &amp; The Stragglers <br />
+              Stoney LaRue <br />
+              Pat Green <br />
+              The Bellamy Brothers <br />
+              Roger Creager <br />
+              Brandon Rhyder <br />
+              Chris Knight <br />
+              John Fullbright <br />
+              Silverada <br />
+              Doug Stone <br />
+              Vandoliers <br />
+              Kevin Fowler <br />
+            </p>
           </div>
-          <div class="form-group">
-            <label for="exampleTextarea">Message</label>
-            <textarea class="form-control" name="message" id="exampleTextarea" rows="6"></textarea>
+          <div class="col-sm">
+            <h5 class="text-center mx-auto">Performed At: <br /></h5>
+            <p class="text-center mx-auto">
+              Gruene Hall <br />
+              Saxon Pub <br />
+              Stubb’s BBQ Graceland <br />
+              Love &amp; War in Texas <br />
+              The Globe Theater <br />
+              Devil's Backbone Tavern <br />
+              Hernandos Hideaway <br />
+              Magnolia Motor Lounge <br />
+              Poodies Roadhouse <br />
+              Summer Solstice Festival <br />
+              Two Step Inn Kickoff <br />
+              Carol's Pub <br />
+              Buck's Bar & Grill <br />
+              The Mercury Lounge <br />
+              MusicFest at Steamboat Showcase <br />
+            </p>
           </div>
-          <button type="submit" class="link-blue btn btn-success mt-2">Submit</button>
-        </fieldset>
-      </form>
+          <div class="col-sm">
+            <h5 class="text-center mx-auto">Additional Facts: <br /></h5>
+            <p class="text-center mx-auto">
+              Edgewater Music Group - Distribution <br />
+              Western Grunge Records - Management and Booking <br />
+              Shiner Beer Sponsored Artist <br />
+              Jenarayte - Radio Promotion <br />
+              Alexis Tedford - Publicity <br />
+              Dewars Scotch - Sponsorship <br />
+              600,000+ Spotify Streams <br />
+              Saving Country Music - Essential Album of the Year (Wimberley
+              2022) <br />
+              Seven Album of the Year List inclusions(Wimberley) <br />
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <br />
+
+      <iframe
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/album/0kGlulDbTHe4KrU2AKNZ2M?utm_source=generator"
+        width="100%"
+        height="380"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+
+      <!-- Contact Form -->
+      <div class="container w-90 mx-auto my-5">
+        <h3 class="logo-yellow mt-3" id="contact-nav">Contact Memphis Kee</h3>
+        <hr />
+        <form
+          class="mt-3 mb-3"
+          action="https://formspree.io/f/xrgjgppl"
+          method="POST"
+        >
+          <fieldset>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Your Email</label>
+              <input
+                type="email"
+                name="_replyto"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleTextarea">Message</label>
+              <textarea
+                class="form-control"
+                name="message"
+                id="exampleTextarea"
+                rows="6"
+              ></textarea>
+            </div>
+            <button type="submit" class="link-blue btn btn-success mt-2">
+              Submit
+            </button>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="parallax-footer mt-3"></div>
     </div>
 
-    <div class="parallax-footer mt-3"></div>
+    <!-- Footer -->
+    <footer class="mt-auto">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        <p class="text-muted">
+          Designed by <a href="www.joeysisk.com">-Joey Sisk-</a>
+        </p>
+      </div>
+    </footer>
 
-  </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://use.fontawesome.com/743f6c2984.js"></script>
 
-  <!-- Footer -->
-  <footer class="mt-auto">
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      <p class="text-muted">Designed by <a href="www.joeysisk.com">-Joey Sisk-</a></p>
-    </div>
-  </footer>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
-  <script src="https://use.fontawesome.com/743f6c2984.js"></script>
-
-
-  <!-- Custom Script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js" type="text/javascript"></script>
-  <script src="js/eventsPublic.js" type="text/javascript"></script>
-</body>
-
+    <!-- Custom Script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="js/eventsPublic.js" type="text/javascript"></script>
+  </body>
 </html>
