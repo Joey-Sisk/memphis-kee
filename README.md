@@ -21,6 +21,8 @@ A website to advertise the music and personality of Memphis Kee and his band. Th
 
 [This link will take you to the deployed site on Heroku!](http://memphis-kee.herokuapp.com//)
 
+At some point I may add a long text toggle for the Press Kit page using this method: https://medium.com/@mohamad-alaskari/creating-a-read-more-read-less-toggle-for-text-on-web-pages-52ab5f3c8765
+
 ## Screenshot
 
 ![First Screenshot](./screenshots/screenshot1.png)

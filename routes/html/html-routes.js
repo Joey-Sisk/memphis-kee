@@ -2,7 +2,7 @@ const router = require('express').Router();
 const path = require('path');
 
 router.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/album.html'));
+  res.sendFile(path.join(__dirname, '../../public/tour.html'));
 });
 
 router.get('/cms', (req, res) => {
@@ -21,12 +21,12 @@ router.get('/presskit', (req, res) => {
   res.sendFile(path.join(__dirname, '../../public/presskit.html'));
 });
 
-router.get('/tour', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/tour.html'));
-});
-
-// router.get('/epk', (req, res) => {
-//   res.sendFile(path.join(__dirname, '../../public/epk.html'));
+// router.get('/tour', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../../public/tour.html'));
 // });
+
+router.get('/video', (req, res) => {
+  res.sendFile(path.join(__dirname, '../../public/video.html'));
+});
 
 module.exports = router;
